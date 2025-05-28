@@ -33,7 +33,7 @@ embedding_model = SentenceTransformer("keepitreal/vietnamese-sbert")
 
 
 # Khởi tạo ChromaDB client
-client = chromadb.PersistentClient(path="./backend/rag_chatbot_data")
+client = chromadb.PersistentClient(path="./rag_chatbot_data")
 
 # Khởi tạo embedding function (phải giống với lúc tạo collection)
 config = EmbeddingConfig(name="keepitreal/vietnamese-sbert")
