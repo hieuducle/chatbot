@@ -1,0 +1,7 @@
+.env
+backend/.env
+backend/embeddings/__pycache__
+backend/reflection/__pycache__
+backend/semantic_router/__pycache__
+
+
