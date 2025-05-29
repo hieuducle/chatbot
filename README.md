@@ -1,6 +1,10 @@
 # Chatbot Rag System
 
 ## System Architecture
+<p align="center">
+  <img src="achitectureRag.png" width=600><br/>
+  <i>Achitecture</i>
+</p>
 
 * Reflection: Use LLM to paraphrase the current question based on the chat history.
 
