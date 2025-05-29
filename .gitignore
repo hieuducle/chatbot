@@ -1,4 +1,5 @@
 .env
+.venv
 backend/.env
 backend/embeddings/__pycache__
 backend/reflection/__pycache__

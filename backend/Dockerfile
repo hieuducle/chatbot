@@ -11,13 +11,15 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
 RUN pip install --upgrade openai
+pip install langchain
 # Copy the entire project to the working directory
 COPY . .
 
 # Ensure the ChromaDB persistent storage directory exists
-RUN mkdir -p ./rag_chatbot_data
+
 
 # Expose the port the Flask app runs on
 EXPOSE 8000
